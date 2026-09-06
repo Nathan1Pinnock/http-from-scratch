@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>http-from-scratch</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>http-from-scratch</h1>
+    <p>This page was served by an HTTP/1.1 server written in C# on raw TCP sockets. No Kestrel, no HttpListener: the request you just sent was parsed by hand.</p>
+    <p>Open the developer tools and look at the response headers. Reload the page and you should get a <code>304 Not Modified</code> for this file and the stylesheet.</p>
+    <ul>
+      <li><a href="/hello">/hello</a> comes from a handler in code.</li>
+      <li><code>curl -d "ping" localhost:8080/echo</code> echoes a request body back.</li>
+      <li><a href="/missing">/missing</a> is a 404.</li>
+    </ul>
+    <p id="proof">Loading…</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

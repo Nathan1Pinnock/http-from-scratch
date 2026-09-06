@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f6f7f9;
+  color: #1f2328;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+}
+
+code {
+  background: #eef1f4;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+#proof {
+  color: #57606a;
+}

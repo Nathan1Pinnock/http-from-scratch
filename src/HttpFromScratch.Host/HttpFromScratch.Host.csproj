@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\HttpFromScratch\HttpFromScratch.csproj" />
@@ -10,5 +10,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The sample site lives next to the app so "dotnet run" can serve it from the www folder. -->
+    <None Include="www\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 
 </Project>
