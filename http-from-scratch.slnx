@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HttpFromScratch/HttpFromScratch.csproj" />
+    <Project Path="src/HttpFromScratch.Host/HttpFromScratch.Host.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HttpFromScratch.Tests/HttpFromScratch.Tests.csproj" />
+  </Folder>
+</Solution>
